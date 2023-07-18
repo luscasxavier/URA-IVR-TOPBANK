@@ -1,0 +1,14 @@
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+ FRAMEWORK TELEK PARA URA COM FASTAGI
+ VERSÃO 1.0 DE 2021-09-09 POR RODRIGO BORGES DE ALMEIDA
+
+
+ CONTROLE DE VERSÃO
+
+ 1.0 - VERSÃO INICIAL DO FRAMEWORK
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+REFERENCIAS INTERESSANTES
+https://asterisk.ctiapps.pro/Asterisk/FastAGI.html
+http://phpagi.sourceforge.net/phpagi22/api-docs/phpAGI/AGI.html#fastpass_get_data

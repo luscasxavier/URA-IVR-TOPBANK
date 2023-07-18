@@ -1,0 +1,51 @@
+
+
+
+1 - Instalar serviços necessários ao Fastagi via rede.
+
+//Documentar instalação
+
+
+2 - Copiar arquivos da pasta Lib para /var/lib/asterisk/agi-bin
+
+- Lib/phpagi-asmanager.php
+- Lib/phpagi-fastagi.php
+- Lib/phpagi.php
+- Lib/FrameWorkUraTelek.php
+
+3 - Copiar arquivos da URA para /var/lib/asterisk/agi-bin
+
+- apis_topbank.php
+- config_topbank.php
+- UraTopbankFastAGI.php
+
+4 - APONTAR O EXTENSIONS PARA CHAMAR O URA NO FASTAGI EXEMPLO:
+
+exten => _32937630,1,Answer()
+exten => _32937630,n,wait(1)
+exten => _32937630,n,AGI(agi://127.0.0.1/UraTopbankFastAGI.php,12345)
+exten => _32937630,n,hangup()
+
+5 - Ferramentas e utilitários
+Criei duas feramentas para ajudar com o Audios
+
+- Outros/converte_audio.sh
+serve para converter os arquivos de audio para o formato do asterisk, 
+o script irá converter todos os wavs da pasta corrente e salvar em uma subpasta
+chamada convertidos.
+
+
+- Outros/renomearAudios.php
+Este script renomeia todos os arquivos normalizando os seguintes itens:
+    - Retira todos os espacos do nome do arquivo.
+    - troca caracteres acentuados por sem acento do nome do arquivo.
+    - Coloca todas as letras em lowercase.
+    
+
+
+6 - Copiar Audios para pasta de audio da URA específica
+
+
+7 - Verificar arquivo de configuração da URA
+
+- config_topbank.php
