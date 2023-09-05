@@ -1,13 +1,13 @@
 <?php
 
 return array(
-    //'user_login' => 'ura.telek',
-    'user_login' => 'blip.valecard@multicanais',
-    //'pass_login' => '22222',
-    'pass_login' => '59602',
-    //'server_api' => 'http://10.1.0.43:8080/',
-    'server_api' => 'http://10.20.3.158:8080/',
-    'url_login' => 'ura-vale-api/auth/login',
+    //'user_login' => $login,
+    'user_login' => $login,
+    //'pass_login' => $password,
+    'pass_login' => $password,
+    //'server_api' => $server,
+    'server_api' => $server,
+    'url_login' => $url_login,
     'siglaUra' => 'TOPBANK',//nome da ura para aparece nos logs e mensagens
     'copiar_audios_para_teste' => 'true', //usar essa opcao somente para testar sem os audio pois ira copiar o audioteste.wav para os audios faltantes. 
     'extensao_audio' =>'.wav',//extensao do formato padrao de audios
